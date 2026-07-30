@@ -6,6 +6,12 @@ Helm chart to sync [1Password](https://1password.com/) items into Kubernetes Sec
 
 **This is a fork of the original chart by [vquie](https://github.com/vquie/OnePasswordItem-helm)** (chart also published at https://vquie.github.io/helm-charts). We do not claim credit for the original design. This fork changes the values schema and behavior as described below.
 
+## 🗺️ Topology
+
+![onepassworditem topology](docs/img/topology.svg)
+
+<sub>Generated from this repo’s `values.yaml`, `Chart.yaml` and `argocd/` manifests. Source: [`docs/img/topology.mmd`](docs/img/topology.mmd).</sub>
+
 ## Changes in this fork
 
 - **Namespace from release:** OnePasswordItem resources are always created in **`.Release.Namespace`**.
